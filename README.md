@@ -6,7 +6,7 @@ If the case of many solutions, use 'add'=true (described below) to continue calc
 
 signature is: calculate_matches(input_string, add, trace, callback(output string))
 
-there 'add' and 'trace' are optional.
+there 'add' and 'trace' are optional. By default: add=true and trace is false.
 when 'add' is true, each new solution puts on new line
 when 'trace' is on, we can see how it counts in console.
 

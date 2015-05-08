@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<textarea id='matches_input' rows=4 placeholder='7-1=2 e.g.'></textarea>
+	<br>
+	<button id='matches_btn'>Solve</button>
+	<script src='matches.js'></script>
+
+	<script>
+		//(input_string, additional..., callback)
+		var solve = function() {
+			var problem = document.getElementById('matches_input').value
+			calculate_matches(problem, true, true, function(output) {document.getElementById('matches_input').value = output;})
+		}
+
+		btn = document.getElementById ('matches_btn')
+
+		btn.onclick = solve
+		btn.setAttribute('onclick', 'solve()')
+
+		document.getElementById('matches_input').value = '' //ie clear after reload
+	</script>
+</body>
+</html>

@@ -38,7 +38,7 @@ calculate_matches = (input_string, additional..., callback)->
 		6:[5] #another 6
 		7:[1]
 		8:[0,6,9]
-		9:[5] #another 9
+		9:[5,3] #another 9
 		'+':['-']
 		'-':[]
 		

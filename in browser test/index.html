@@ -10,7 +10,7 @@
 		//(input_string, additional..., callback)
 		var solve = function() {
 			var problem = document.getElementById('matches_input').value
-			calculate_matches(problem, true, true, function(output) {document.getElementById('matches_input').value = output;})
+			calculate_matches(problem, true, true, function(output) {document.getElementById('matches_input').value += '\n'+output;})
 		}
 
 		btn = document.getElementById ('matches_btn')

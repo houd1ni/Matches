@@ -1,5 +1,5 @@
 # Matches
-Matches equal problem solver
+Matches equation problem solver
 
 This tiny function solves problems with matches like "7-1=2", where we need to move one match to win.
 If the case of many solutions, use 'add'=true (described below) to continue calculatin even after first solution was found.
